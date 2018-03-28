@@ -10,10 +10,12 @@
 #define PORT 4000
 #define BACKLOG 10
 
+#define Server_IP_address "127.0.0.1"
 
 
 
 int main(){
+
   int sockfd,new_fd; //socket file and connected file discripter
 
   struct sockaddr_in my_addr; //my address
@@ -42,7 +44,8 @@ int main(){
   }
 
   my_addr.sin_family = AF_INET;
-  my_addr.sin_port = htonl(INADDR_ANY);
+  my_addr.sin_port = htons(PORT);
+  my_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
 
 //socket address setting
 
@@ -55,14 +58,12 @@ int main(){
     perror("listen error");
     exit(1);
   }
-
   while(1){
     sin_size = sizeof(struct sockaddr_in);
     if((new_fd = accept(sockfd, (struct sockaddr*)&their_addr, &sin_size)) == -1){
       perror("accept error");
       continue;
     }
-
     printf("server : got connection from %s\n",inet_ntoa(their_addr.sin_addr) );
   }
 }
