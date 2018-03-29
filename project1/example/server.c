@@ -23,7 +23,7 @@ int main(int argc, char *argv[]){
   int portnum; // port
   socklen_t clilen;
 
-  char buffer[512];
+  char buffer[256];
   char sendBuf[256];
 
   struct sockaddr_in serv_addr, cli_addr;
@@ -64,9 +64,20 @@ int main(int argc, char *argv[]){
   if (newsockfd < 0)
     error("ERROR on accept");
 
-  bzero(buffer,512);
+  bzero(buffer,256);
 
-  n = read(newsockfd,buffer,511); //Read is a block function. It will read at most 255 bytes
+  while(  (n = read(newsockfd,buffer,255))>0){
+    bzero(sendBuf,256);
+
+    sprintf(sendBuf,"%s",buffer);
+
+  n = write(newsockfd,sendBuf,strlen(sendBuf));
+  bzero(buffer,256);
+  if (n < 0)
+    error("ERROR reading from socket");
+
+  }
+ //Read is a block function. It will read at most 255 bytes
 
   if (n < 0)
     error("ERROR reading from socket");
@@ -76,13 +87,10 @@ int main(int argc, char *argv[]){
 
 
 
-  bzero(sendBuf,256);
-
-  sprintf(sendBuf,"%s",buffer);
 
 
 
-  n = write(newsockfd,sendBuf,strlen(sendBuf)); //NOTE: write function returns the number of bytes actually sent out �> this might be less than the number you told it to send
+  //NOTE: write function returns the number of bytes actually sent out �> this might be less than the number you told it to send
   printf("n = %d\n",n);
   if (n < 0) error("ERROR writing to socket");
 

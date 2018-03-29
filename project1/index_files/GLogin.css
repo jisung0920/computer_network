@@ -1,0 +1,56 @@
+#gSignInWrapper {
+	margin-top: 250px;
+	width: 260px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#customBtn {
+	display: inline-block;
+	background: #FFFFFFBB;
+	color: #222;
+	width: 260px;
+	border-radius: 3px;
+	border: thin solid #888;
+		height: 60px;
+	box-shadow: 0.5px 0.5px 0.5px #333;
+	white-space: nowrap;
+}
+
+#customBtn:hover {
+	cursor: pointer;
+}
+
+#icon{
+	margin-top: 12px;
+	margin-left: 20px;
+
+	width:35px;
+	height:35px;
+}
+
+
+span.btnText {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 17px;
+	padding-top: 15px;
+	color: #100719;
+	/*padding-right: 42px;*/
+	font-size: 16px;
+	font-weight:bolder;
+}
+
+.data {
+	display: none;
+	margin-top: 180px;
+	margin-left: 200px;
+	font-weight: bold;
+
+	color: #000000;
+}
+
+#email {
+	margin-top: 20px;
+	width: 350px;
+}

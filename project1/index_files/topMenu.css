@@ -1,0 +1,98 @@
+#topMenu {
+	height: 40px;
+/*background-color: #00000044;*/
+}
+
+#topMenu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#topMenu ul li {
+
+
+	float: left;
+	margin-top: 5px;
+line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+}
+
+.topMenuLi {
+
+	text-decoration: none;
+
+	display: block;
+	width: 150px;
+	font-size: 15px;
+
+}
+
+
+.menuLink, .submenuLink {
+ 	   -ms-user-select: none;
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 150px;
+font-weight: bold;
+	font-size: 15px;
+	font-weight: bold;
+
+}
+
+.topMenuLi:hover .menuLink{
+text-decoration: none;
+
+	color: #58ACFA;
+	/*background-color: #4d4d4d;*/
+}
+
+.topMain {
+	/*background-color: #00000044;*/
+	text-align: right;
+	font-size: 20pt;
+	color: #58ACFA;
+	padding: 40px;
+}
+
+
+.submenuLink {
+	color: white;
+font-size: 13px;
+	/*background-color: white;
+	border: solid 1px black;*/
+	margin-top: -1px;
+}
+
+.submenu {
+	position: absolute;
+	height: 0px;
+	overflow: hidden;
+
+	transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정 */
+	-moz-transition: height .2s; /* 파이어폭스 적용 */
+	-o-transition: height .2s; /* 오페라 적용 */
+}
+
+.topMenuLi:hover .submenu {
+
+	height: 140px; /* 하위메뉴 추가 시 height을 늘려줘야 함 */
+}
+
+.submenuLink:hover {
+	color: #58ACFA;
+	text-decoration: none;
+	/*background-color: #dddddd;*/
+}
+
+.totalmenu {
+  	background-image: url("img/mainImg.png");
+
+}
