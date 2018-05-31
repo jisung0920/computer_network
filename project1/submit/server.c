@@ -44,6 +44,9 @@ int main(int argc, char *argv[])
     listen(sockfd,10);
     //===============================binding and queue setting
 
+
+    fprintf(stdout, "%s\n","\nComputer Network - project 1\nDefault file : index.html \n지원 가능 포멧 : html, jpeg, gif, pdf, mp3\n작성자 : 정지성" );
+
     while(1){
 
       int pid;
