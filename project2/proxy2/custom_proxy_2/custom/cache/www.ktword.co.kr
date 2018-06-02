@@ -1,0 +1,45 @@
+HTTP/1.1 200 OK
+Date: Fri, 01 Jun 2018 16:34:46 GMT
+Server: Apache/2.4.27 (Win64) PHP/5.6.31
+X-Powered-By: PHP/5.6.31
+Set-Cookie: PHPSESSID=ogk3v166vekp13a7dg1lih3db4; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Length: 6945
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+
+
+
+<!DOCTYPE html><html><head><title>[정보통신기술용어해설]</title><meta http-equiv='content-type' content='text/html; charset=utf-8'><meta name='keywords' content='정보통신용어,정보통신사전,차재복'></head><body><style type='text/css'>
+			body { font-size: 13px; }
+			form { font-size: 14px; }
+		</style><body onload='setfocus()'><script language='JavaScript'>
+				function setfocus() {
+					document.form_1.m_search.focus();
+				 }
+			</script><table cellpadding=0 cellspacing=0><tr><td nowrap><font size=4><b> 【 &nbsp; 정보통신기술용어해설 &nbsp; 】 </font></b></td><td align=left><i><font=1> &nbsp; 정보통신 및 과학기술 지식을 간결하게 정리,체계화시키고 있는 <b>개인연구실</b> 입니다.<br></font></i></td></tr></table><hr><br><script language='javascript' type='text/javascript'>
+					function submitform() {
+						document.forms['form_1'].opt.value = 'bunya_search';
+						document.forms['form_1'].m_text.value = document.forms['form_1'].m_search.value;
+						document.forms['form_1'].submit();
+					}
+				</script><br>&nbsp;&nbsp;&nbsp; 용어명 검색 &nbsp;&nbsp;&nbsp; <form name=form_1 action=abbr_view.php method=post style='display:inline-block;'><input type=text name=m_search size=20><input type=hidden name=opt value='search'><input type=hidden name=m_text><button type=submit formaction='abbr_view.php'>검색</button></form><br><br><div style='padding-left:15px;margin:5px;'>알파벳 검색 &nbsp;&nbsp; <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=A>A</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=B>B</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=C>C</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=D>D</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=E>E</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=F>F</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=G>G</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=H>H</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=I>I</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=J>J</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=K>K</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=L>L</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=M>M</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=N>N</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=O>O</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=P>P</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=Q>Q</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=R>R</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=S>S</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=T>T</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=U>U</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=V>V</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=W>W</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=X>X</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=Y>Y</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=Z>Z</a> <br><br>우리말 검색 &nbsp;&nbsp; <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=가>가</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=나>나</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=다>다</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=라>라</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=마>마</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=바>바</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=사>사</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=아>아</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=자>자</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=차>차</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=카>카</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=타>타</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=파>파</a> <a href=abbr_view.php?opt=search&m_first_letter=1&m_search=하>하</a> <br><br><a href='../test/yoyak/yoyak.php'>분야별 검색</a>&nbsp; &nbsp; 분류항목 1,346건 &nbsp; 용어해설 5,574건 등록<br><br><br><a href='dict_history_v2.php'>최근 편집</a> &nbsp; &nbsp; 일평균 0 건 업데이트 ( <a href=abbr_view.php?m_temp1=5812>C 문자열 함수</a>, &nbsp;<a href=abbr_view.php?m_temp1=2358>리터럴</a>, &nbsp;<a href=abbr_view.php?m_temp1=5424>트리 종류</a>, &nbsp;<a href=abbr_view.php?m_temp1=5423>이진 트리</a>, &nbsp;<a href=abbr_view.php?m_temp1=1890>배열 (array)</a>, &nbsp;<a href=abbr_view.php?opt=history>. . .</a> )<br><br><a href=access_stat.php>접속 통계</a> &nbsp; &nbsp; 일평균 06월 4,715명 &nbsp;  05월 4,658명 &nbsp;  04월 5,634명 &nbsp; <br><br><a href=refer_all.php>참고 도서</a> &nbsp; &nbsp; 현재 257 종 선별<br><br><br></div><hr><div style='display:inline-block; border:1px dashed gray; padding: 3px 15px 3px 15px; margin:15px 10px 5px 15px; line-height:130%;'><pre style='font-size:13px; font-weight: bold;'>
+주여 넓으신 은혜 베푸사 나를 받아 주시고
+나의 품은 뜻 주의 뜻같이 되게 하여 주소서 ...
+-- 찬송가 `주의 음성을 내가 들으니` 2절 중에서 -- </pre></div><br><br> &nbsp;&nbsp;&nbsp;<span title='cjbword@gmail.com' style='line-height:200%;text-decoration:none;text-decoration:underline;'><font size=2>Copyrightⓒ written by 차재복 (cjbword@gmail.com)</font></span> <br><br><div style='margin-left:20px; line-height:230%;'>ㅇ S/W 개발 및 개선 중 &nbsp;&nbsp;&nbsp;&nbsp; ( 현재 모듈 15개, 파일 57개 ) <br><link rel='stylesheet' type='text/css' href='../open_src/open_src_files.css' /><div style=' margin-left:5px; '>&nbsp;&nbsp; [ <a href='/test/example/example.php'>구현 목록</a> ] &nbsp;&nbsp; [  <a href='/test/open_src/open_src_files_list.php'>온라인 소스</a>  ] &nbsp;&nbsp; [ <a href='https://1drv.ms/f/s!AoYo5mEXgh5y5t4Cy2bkMHfCw0zsUg' target='_blank' class='onedrive'>파일 개방</a> ]<div id='src_files_div' style='display:none;margin:10px 5px 5px 5px;padding:5px;border:1px dotted gray;'></div></div><br>ㅇ 기술용어해설 후원 &nbsp;&nbsp; ( 5천원 이내 소액 한 )<br>&nbsp;&nbsp;&nbsp;&nbsp;- 국민은행 867701-04-090102 `예금주:차재복(기술용어해설)`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .  &nbsp; 2018-05월&nbsp; : &nbsp; 백윤철님(05월31일) &nbsp;&nbsp; 노희준님(05월29일) &nbsp;&nbsp; (익명)님(05월28일) &nbsp;&nbsp; 이지찬님(05월09일) &nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"여러분의 격려와 지원이 큰 힘이 됩니다. 감사합니다."<br><br></div><hr>
+
+
+HTTP/1.1 404 Not Found
+Date: Fri, 01 Jun 2018 16:34:47 GMT
+Server: Apache/2.4.27 (Win64) PHP/5.6.31
+X-Powered-By: PHP/5.6.31
+refresh: 1; url='http://www.ktword.co.kr/'
+Content-Length: 31
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+ 
+page not found error ... !!!
