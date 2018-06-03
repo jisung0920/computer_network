@@ -123,7 +123,7 @@ int main(int argc,char ** argv){
 
           printf("\n\n## Log request to 'proxy.log' file\n");
           logging(client_name,domain,cached_size);
-
+          renewal_ts(cached_url);
           //===============================log request
 
 

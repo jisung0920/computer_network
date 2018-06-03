@@ -37,13 +37,11 @@ Node* deleteOldest(LinkedList *sl) {
     } else return NULL;
 }
 
-/*
- * add newNode to dl's last position
- */
 void add(LinkedList *sl, Node *newNode) {
 
-    if (newNode == NULL) return;
-    // write your code..
+    if (newNode == NULL)
+      return;
+
     if (sl->remainder_size < newNode->object_size) {
         deleteOldest(sl);
         add(sl, newNode);
@@ -98,9 +96,18 @@ void p_cache_list(LinkedList *cachelist){
       if(node!=NULL){
         printf("\n\n## cache url list===========\n");
         while(node!=NULL){
-          printf("    [%2d] : %s (size : %d )\n",count++,node->url,node->object_size );
+          time_t ts = node->timestemp;
+          struct tm t = *localtime(&ts);
+          printf("    [%2d] : %s (size : %d ) time : %d-%d-%d %d:%d:%d\n",count++,node->url,node->object_size,t.tm_year+1900,t.tm_mon+1,t.tm_mday,t.tm_hour,t.tm_min,t.tm_sec );
           node = node->next;
         }
         printf("============================\n\n");
       }
+}
+
+void renewal_ts(Node* node){
+    time_t current_time;
+    time(&current_time);
+    node->timestemp = current_time;
+
 }
