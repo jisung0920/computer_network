@@ -52,12 +52,12 @@ int deliver_object_server_to_client(int server,int client,char* object){
 
 
 //Function that sends a 400 bad request response to the socket provided
-void send_invalid(char * t3, int connfd) {
+void send_invalid(char * response, int fd) {
    char * message;
-   strcpy(message, t3);
+   strcpy(message, response);
    strcat(message, " 400 Bad request\nConnection: Closed\nContent-Type: text/html; charset=UTF-8\r\n\r\n <h1>INVALID REQUEST</h1>");
    printf("\n\n## Sent invalid request to client \n\n");
-   send(connfd, message, strlen(message), 0);
+   send(fd, message, strlen(message), 0);
 }
 
 int get_header_value(char * index, char * value, char * commend) {

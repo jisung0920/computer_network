@@ -92,7 +92,7 @@ int main(int argc,char ** argv){
 
 
         getsockname(cli_sockfd, (struct sockaddr *) &proxy_addr, & proxylen);
-        inet_ntop(AF_INET, &proxy_addr, server_name, INET_ADDRSTRLEN);
+        inet_ntop(AF_INET, &proxy_addr, client_name, INET_ADDRSTRLEN);
 
   //===============================client setting
 
@@ -103,7 +103,7 @@ int main(int argc,char ** argv){
           break;
         }
 
-        printf("\n\n## Received from browser \n********\n%s\n********\nserver : %s\n", Buffer,server_name);
+        printf("\n\n## Received from browser \n********\n%s\n********\nbrowser : %s\n", Buffer,client_name);
 
         sscanf(Buffer, "%s %s %s", method, domain, protocol);
 
@@ -122,8 +122,9 @@ int main(int argc,char ** argv){
           int cached_size = send_cached_url(cli_sockfd,cached_url);
 
           printf("\n\n## Log request to 'proxy.log' file\n");
+
           logging(client_name,domain,cached_size);
-          renewal_ts(cached_url);
+
           //===============================log request
 
 
@@ -167,7 +168,7 @@ int main(int argc,char ** argv){
           if(connect(ser_sockfd,result->ai_addr,result->ai_addrlen)<0)
             error("server connect error\n");
 
-          inet_ntop(AF_INET, & (result->ai_addr), client_name, INET_ADDRSTRLEN);
+          inet_ntop(AF_INET, & (result->ai_addr), server_name, INET_ADDRSTRLEN);
 
           printf("\n\n## Server connect complete\n");
 
@@ -196,8 +197,8 @@ int main(int argc,char ** argv){
 
           if(total_object_size<MAX_OBJECT_SIZE){
             add(cache_list,nodeinit(domain,object,total_object_size));
+            bzero(object,total_object_size);
             printf("\n\n## Caching object (name : %s)\n",domain );
-            bzero(object,MAX_OBJECT_SIZE);
           }
           else{
             printf("\n\n## Object size is %d\n### Cannot cache (over MAX_OBJECT_SIZE)\n",total_object_size);
